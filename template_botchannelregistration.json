@@ -38,10 +38,12 @@
             "defaultValue": ""
         },
         "appId": {
-            "type": "string"
+            "type": "string",
+            "defaultValue": " "
         },
         "appSecret": {
-            "type": "string"
+            "type": "string",
+            "defaultValue": " "
         },
         "azureWebJobsBotFrameworkDirectLineSecret": {
             "type": "string",
