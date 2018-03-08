@@ -1,13 +1,7 @@
-# botchannelregistration
+# registerbotchannel
 Bot Channel Registration
- ## Move file attachments from Dynamics 365 to Azure Blob
-Move Dynamics 365 Customer Engagement aka CRM Online attachments (Notes attachments / Email Activity Mime attachments) to Azure Blob storage using Azure Logic Apps.
-It would be ideal to test run the these Logic Apps in your pre - production environments before using in your production environment.
-
-## Description:
-As a customer, I would like to move all my existing CRM attachments stored in Notes / Emails to an Azure Blob as a one time / continuous setup.
-
-These Logic Apps can be used together with the Attachment Management solution available in <a href="https://appsource.microsoft.com/en-us/product/dynamics-365/microsoft_labs.96257e65-dbbe-43db-b775-77cf1609530c">AppSource</a>.
+ ## To create Bot Chaneel Registration
+This template will be helpful to register Bot Channel.
 
 ## Bot Channel Registration:
 <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fsaikrishnasgit%2Fbotchannelregistration%2Fmaster%2Ftemplate.json" target="_blank"><img src="http://azuredeploy.net/deploybutton.png"/>
