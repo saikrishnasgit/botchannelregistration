@@ -25,9 +25,9 @@
       "type": "string",
       "defaultValue": "nosite"
     },
-    "createNewStorage": 
-    {
-      "type": "bool"
+    "createNewStorage": {
+      "type": "bool",
+      "defaultValue": false
     },
     "storageAccountName": 
     {
@@ -59,7 +59,8 @@
       "defaultValue": ""
     },
     "useAppInsights": {
-      "type": "bool"
+      "type": "bool",
+      "defaultValue": false
     },
     "appInsightsLocation": {
       "type": "string"
@@ -69,7 +70,8 @@
       "type": "string"
     },
     "createServerFarm": {
-      "type": "bool"
+      "type": "bool",
+      "defaultValue": false
     },
     "serverFarmLocation": {
       "type": "string",
