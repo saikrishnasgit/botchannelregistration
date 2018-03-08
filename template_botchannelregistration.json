@@ -59,8 +59,7 @@
       "defaultValue": ""
     },
     "useAppInsights": {
-      "type": "bool",
-      "defaultValue": "false"
+      "type": "bool"
     },
     "appInsightsLocation": {
       "type": "string"
