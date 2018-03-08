@@ -39,11 +39,11 @@
         },
         "appId": {
             "type": "string",
-            "defaultValue": " "
+            "defaultValue": ""
         },
         "appSecret": {
             "type": "string",
-            "defaultValue": " "
+            "defaultValue": ""
         },
         "azureWebJobsBotFrameworkDirectLineSecret": {
             "type": "string",
@@ -59,7 +59,7 @@
         },
       "useAppInsights": {
         "type": "bool",
-        "defaultValue": false
+        "defaultValue": true
       },
       "appInsightsLocation": {
         "type": "string",
