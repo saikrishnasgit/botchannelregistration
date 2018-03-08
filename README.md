@@ -9,28 +9,11 @@ As a customer, I would like to move all my existing CRM attachments stored in No
 
 These Logic Apps can be used together with the Attachment Management solution available in <a href="https://appsource.microsoft.com/en-us/product/dynamics-365/microsoft_labs.96257e65-dbbe-43db-b775-77cf1609530c">AppSource</a>.
 
-## Move CRM Note Attachments to Azure Blob:
+## Bot Channel Registration:
 <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fsaikrishnasgit%2Fbotchannelregistration%2Fmaster%2Ftemplate.json" target="_blank"><img src="http://azuredeploy.net/deploybutton.png"/>
 </a>
 
-## Move CRM Email Attachments to Azure Blob:
-<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fgsureshqa%2FLAMoveCRMAttachmentsToBlob%2Fmaster%2FLA-MoveCRMEmail-AttachmentsToBlob.json" target="_blank">
-<img src="http://azuredeploy.net/deploybutton.png"/>
-</a>
 
-## Move CRM Email Attachments By CreatedOn to Azure Blob:
-<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fgsureshqa%2FLAMoveCRMAttachmentsToBlob%2Fmaster%2FLA-MoveCRMEmailByDate-AttachmentsToBlob.json" target="_blank">
-<img src="http://azuredeploy.net/deploybutton.png"/>
-</a>
-
-#### Note:
-To update the start and end dates for CreatedOn for email records, go to Logic App Code view -> Line 111 -> "$filter": "attachmentcount gt 0 and createdon gt 2017-01-01T00:00:00Z and createdon lt 2018-01-01T00:00:00Z",
-
-## Pre requisites:
-Create the below containers in Azure Blob storage
-1) notesattachments
-2) emailattachments
-- Note: User can have his own container names updated in Logic Apps via Code view
 
 ## Deployment steps
 
