@@ -10,19 +10,19 @@
       "type": "string"
     },
     "location": {
-      "type": "string"
+      "type": "centralus"
     },
     "sku": {
-      "type": "string"
+      "type": "S1"
     },
     "kind": {
-      "type": "string"
+      "type": "bot"
     },
     "siteName": {
-      "type": "string"
+      "type": "nosite"
     },
     "createNewStorage": {
-      "type": "bool"
+      "type": "false"
     },
     "storageAccountName": {
       "type": "string"
