@@ -38,12 +38,10 @@
             "defaultValue": ""
         },
         "appId": {
-            "type": "string",
-            "defaultValue": ""
+            "type": "string"
         },
         "appSecret": {
-            "type": "string",
-            "defaultValue": ""
+            "type": "string"
         },
         "azureWebJobsBotFrameworkDirectLineSecret": {
             "type": "string",
@@ -156,22 +154,22 @@
                 "ApplicationId": "[parameters('botId')]"
             }
         },
-        {
-            "apiVersion": "2017-12-01",
-            "type": "Microsoft.BotService/botServices",
-            "name": "[parameters('botId')]",
-            "location": "global",
-            "kind": "[parameters('kind')]",
-            "sku": {
-                "name": "[parameters('sku')]"
-            },
-            "properties": {
-                "name": "[parameters('botId')]",
-                "displayName": "[parameters('botId')]",
-                "endpoint": "[variables('botEndpoint')]",
-                "msaAppId": "[parameters('appId')]"
-            },
-            "dependsOn": []
-        }
+      {
+        "apiVersion": "2017-12-01",
+        "dependsOn": [],
+        "kind": "[parameters('kind')]",
+        "location": "global",
+        "name": "[parameters('botId')]",
+        "properties": {
+          "name": "[parameters('botId')]",
+          "displayName": "[parameters('botId')]",
+          "endpoint": "[variables('botEndpoint')]",
+          "msaAppId": "[parameters('appId')]"
+        },
+        "sku": {
+          "name": "[parameters('sku')]"
+        },
+        "type": "Microsoft.BotService/botServices"
+      }
     ]
 }
