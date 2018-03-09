@@ -26,8 +26,7 @@
       "defaultValue": "nosite"
     },
     "createNewStorage": {
-      "type": "bool",
-      "defaultValue": false
+      "type": "bool"
     },
     "storageAccountName": {
       "type": "string"
