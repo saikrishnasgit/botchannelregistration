@@ -1,98 +1,102 @@
 {
     "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
     "contentVersion": "1.0.0.0",
-    "parameters": {
-        "botEnv": {
-            "type": "string",
-            "defaultValue": "prod"
-        },
-        "botId": {
-            "type": "string"
-        },
-      "location": 
-      {
-        "type": "string",
-        "defaultValue": "centralus"
-      },
-      "sku": {
-        "type": "string",
-        "defaultValue": "S1"
-      },
-      "kind": {
-        "type": "string",
-        "defaultValue": "bot"
-      },
-      "siteName": {
-        "type": "string",
-        "defaultValue": "nosite"
-      },
-      "createNewStorage": {
-        "type": "bool",
-        "defaultValue": false
-      },
-        "storageAccountName": {
-            "type": "string"
-        },
-        "storageAccountResourceId": {
-            "type": "string",
-            "defaultValue": ""
-        },
-        "appId": {
-            "type": "string"
-        },
-        "appSecret": {
-            "type": "string"
-        },
-        "azureWebJobsBotFrameworkDirectLineSecret": {
-            "type": "string",
-            "defaultValue": ""
-        },
-        "zipUrl": {
-            "type": "string",
-            "defaultValue": ""
-        },
-        "proactiveZipUrl": {
-            "type": "string",
-            "defaultValue": ""
-        },
-      "useAppInsights": {
-        "type": "bool",
-        "defaultValue": false
-      },
-      "appInsightsLocation": {
-        "type": "string",
-        "defaultValue": "East US"
-      },
-        "serverFarmId": {
-            "type": "string"
-        },
-      "createServerFarm": {
-        "type": "bool",
-        "defaultValue": false
-      },
-      "serverFarmLocation": {
-        "type": "string",
-        "defaultValue": "South Central US"
-      },
-        "serverFarmSku": {
-            "type": "object",
-            "defaultValue": {
-                "name": "S1",
-                "tier": "Standard",
-                "size": "S1",
-                "family": "S",
-                "capacity": 1
-            }
-        },
-        "endpoint": {
-            "type": "string",
-            "defaultValue": ""
-        },
-        "luisApiLocation": {
-            "type": "string",
-            "defaultValue": "Global"
-        }
+  "parameters": {
+    "botEnv": {
+      "type": "string",
+      "defaultValue": "prod"
     },
+    "botId": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string",
+      "defaultValue": "centralus"
+    },
+    "sku": {
+      "type": "string",
+      "defaultValue": "S1"
+    },
+    "kind": {
+      "type": "string",
+      "defaultValue": "bot"
+    },
+    "siteName": {
+      "type": "string",
+      "defaultValue": "nosite"
+    },
+    "createNewStorage": {
+      "type": "bool",
+      "defaultValue": false
+    },
+    "storageAccountName": {
+      "type": "string"
+    },
+    "storageAccountResourceId": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "appId": {
+      "type": "string"
+    },
+    "appSecret": {
+      "type": "string"
+    },
+    "azureWebJobsBotFrameworkDirectLineSecret": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "zipUrl": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "proactiveZipUrl": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "useAppInsights": {
+      "type": "bool",
+      "defaultValue": false
+    },
+    "appInsightsLocation": {
+      "type": "string",
+      "defaultValue": "East US"
+    },
+    "appplanname": {
+      "type": "string"
+    },
+    "serverFarmId": {
+      "type": "string",
+      "defaultValue": "resourceId('Microsoft.Web/serverfarms',parameters(‘appplanname’))"
+
+    },
+    "createServerFarm": {
+      "type": "bool",
+      "defaultValue": false
+    },
+    "serverFarmLocation": {
+      "type": "string",
+      "defaultValue": "South Central US"
+    },
+    "serverFarmSku": {
+      "type": "object",
+      "defaultValue": {
+        "name": "S1",
+        "tier": "Standard",
+        "size": "S1",
+        "family": "S",
+        "capacity": 1
+      }
+    },
+    "endpoint": {
+      "type": "string",
+      "defaultValue": ""
+    },
+    "luisApiLocation": {
+      "type": "string",
+      "defaultValue": "Global"
+    }
+  },
     "variables": {
         "storageAccountType": "Standard_LRS",
         "storageAccountId": "[if(or(parameters('createNewStorage'), equals('', parameters('storageAccountResourceId'))), resourceId('Microsoft.Storage/storageAccounts', parameters('storageAccountName')), parameters('storageAccountResourceId'))]",
