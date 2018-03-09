@@ -149,10 +149,10 @@
     },
   "resources": [
     {
-      "apiVersion": "2015-08-01",
+      "apiVersion": "2015-01-01",
       "name": "[parameters('botId')]",
       "type": "Microsoft.Web/sites",
-      "location": "[parameters('location')]",
+      "location": "[parameters('serverFarmLocation')]",
       "properties": {
         "name": "[parameters('botId')]",
         "serverFarmId": "[resourceId('Microsoft.Web/serverFarms',parameters('appServicePlanName'))]"
