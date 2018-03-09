@@ -67,7 +67,7 @@
     },
     "serverFarmId": {
       "type": "string",
-      "defaultValue": "resourceId('Microsoft.Web/serverfarms',parameters(‘appplanname’))"
+      "defaultValue": "resourceId('Microsoft.Web/serverfarms',parameters('appplanname'))"
 
     },
     "createServerFarm": {
