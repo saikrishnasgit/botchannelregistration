@@ -20,7 +20,11 @@
     "kind": {
       "type": "string",
       "defaultValue": "bot"
-    },    
+    },
+    "siteName": {
+      "type": "string",
+      "defaultValue": "nosite"
+    },
     "createNewStorage": {
       "type": "bool",
       "defaultValue": false
