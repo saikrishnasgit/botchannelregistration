@@ -20,11 +20,7 @@
     "kind": {
       "type": "string",
       "defaultValue": "bot"
-    },
-    "siteName": {
-      "type": "string",
-      "defaultValue": "nosite"
-    },
+    },    
     "createNewStorage": {
       "type": "bool",
       "defaultValue": false
@@ -61,19 +57,7 @@
     "appInsightsLocation": {
       "type": "string",
       "defaultValue": "East US"
-    },
-    //"appServicePlanName": {
-    //  "type": "string",
-    //  "metadata": 
-    //  {
-    //    "description": "The name of the App Service plan to use for hosting the web app."
-    //  }
-    //},
-    //"serverFarmId": {
-    //  "type": "string",
-    //  "defaultValue": "resourceId('Microsoft.Web/serverfarms',parameters('appplanname'))"
-
-    //},
+    },   
     "createServerFarm": {
       "type": "bool",
       "defaultValue": false
