@@ -1,7 +1,7 @@
 # registerbotchannel
 Bot Channel Registration
  ## To create Bot Chaneel Registration
-This template will be helpful to register Bot Channel.
+This template will be helpful to register Bot Channel
 
 ## Bot Channel Registration:
 <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fsaikrishnasgit%2Fbotchannelregistration%2Fmaster%2Ftemplate_botchannelregistration.json" target="_blank"><img src="http://azuredeploy.net/deploybutton.png"/>
