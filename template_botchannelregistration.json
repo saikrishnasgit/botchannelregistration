@@ -7,7 +7,8 @@
       "defaultValue": "prod"
     },
     "botId": {
-      "type": "string"
+      "type": "string",
+      "metadata": { "description": "Enter the name you wish to give to the Bot ID, Do not enter the name that already exists" }
     },
     "location": {
       "type": "string",
@@ -24,19 +25,7 @@
     "siteName": {
       "type": "string",
       "defaultValue": "nosite"
-    },
-    //"createNewStorage": {
-    //  "type": "bool"
-    //},
-    //"storageaccountType": {
-    //  "defaultValue": "Standard_LRS",
-    //  "allowedValues": [ "Standard_LRS", "Standard_ZRS", "Standard_GRS", "Standard_RAGRS", "Premium_LRS" ],
-    //  "type": "String"
-    //},
-    //"storageAccountName": {
-    //  "type": "string",
-    //  "metadata": { "description": "Enter the name you wish to give to the Storage account, Do not enter the name that already exists." }
-    //},
+    },   
     "storageAccountResourceId": {
       "type": "string",
       "defaultValue": ""
