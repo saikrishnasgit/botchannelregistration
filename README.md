@@ -15,7 +15,7 @@ You can click the "Deploy to Azure" button at the beginning of this document.
 - Enter the Azure subscription / Resource group / Region
 - Enter the Bot Id name / display name of the Bot Channels Registration
 - Enter App Id / which is been generated in windows app (Native Application Id)
-- Enter App Secret / which is been generated in windows app (Native Secret Key)
+- Enter App Secret / which is been generated in windows app (Secret Key)
 - Click 'I agree to the terms and conditions stated above'
 - Click Purchase
 
