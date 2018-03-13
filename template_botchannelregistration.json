@@ -39,10 +39,6 @@
     "endpoint": {
       "type": "string",
       "defaultValue": ""
-    },
-    "luisApiLocation": {
-      "type": "string",
-      "defaultValue": "Global"
     }
   },
   "variables": {
