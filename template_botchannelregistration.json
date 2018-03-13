@@ -43,7 +43,11 @@
     "appInsightsLocation": {
       "type": "string",
       "defaultValue": "East US"
-    },         
+    },        
+    "endpoint": {
+      "type": "string",
+      "defaultValue": ""
+    },
     "luisApiLocation": {
       "type": "string",
       "defaultValue": "Global"
