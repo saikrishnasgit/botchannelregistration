@@ -39,15 +39,7 @@
     "azureWebJobsBotFrameworkDirectLineSecret": {
       "type": "string",
       "defaultValue": ""
-    },
-    "zipUrl": {
-      "type": "string",
-      "defaultValue": ""
-    },
-    "proactiveZipUrl": {
-      "type": "string",
-      "defaultValue": ""
-    },
+    },    
     "useAppInsights": {
       "type": "bool",
       "defaultValue": false
@@ -55,25 +47,7 @@
     "appInsightsLocation": {
       "type": "string",
       "defaultValue": "East US"
-    },
-    "createServerFarm": {
-      "type": "bool",
-      "defaultValue": false
-    },
-    "serverFarmLocation": {
-      "type": "string",
-      "defaultValue": "South Central US"
-    },
-    "serverFarmSku": {
-      "type": "object",
-      "defaultValue": {
-        "name": "S1",
-        "tier": "Standard",
-        "size": "S1",
-        "family": "S",
-        "capacity": 1
-      }
-    },
+    },        
     "endpoint": {
       "type": "string",
       "defaultValue": ""
