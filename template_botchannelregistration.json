@@ -5,7 +5,7 @@
     "botEnv": {
       "type": "string",
       "readOnly": true,
-      "defaultValue": "prod"
+      "defaultValue": "prod"      
     },
     "botId": {
       "type": "string",
@@ -25,7 +25,7 @@
       "type": "string",
       "defaultValue": "bot",
       "readOnly": true,
-      "metadata": { "description": "Kind of resource. It's **bot** by default" }
+      "metadata": { "description": "Kind of resource. It's *bot* by default" }
     },
     "siteName": {
       "type": "string",
@@ -34,11 +34,11 @@
     },
       "appId": {
         "type": "string",
-        "metadata": { "description": "Enter the **Native Application Id** of the Web app app that is registered in Azure Active Directory" }
+        "metadata": { "description": "Enter the *Native Application Id* of the Web app app that is registered in Azure Active Directory" }
       },
       "appSecret": {
         "type": "string",
-        "metadata": { "description": "Enter the **Secret Key** the Web app app that is registered in Azure Active Directory" }
+        "metadata": { "description": "Enter the *Secret Key* the Web app app that is registered in Azure Active Directory" }
       }
     },
   "variables": {
