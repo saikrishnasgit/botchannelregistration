@@ -18,10 +18,10 @@
       "type": "string",
       "defaultValue": "S1"
     },
-    "kind": {
-      "type": "string",
-      "defaultValue": "bot"
-    },
+    //"kind": {
+    //  "type": "string",
+    //  "defaultValue": "bot"
+    //},
     "siteName": {
       "type": "string",
       "defaultValue": "nosite"
@@ -64,7 +64,8 @@
       "designer": "app",
       "bot": ""
     },
-    "botAppKind": "[variables('botAppKinds')[parameters('kind')]]",
+    //"botAppKind": "[variables('botAppKinds')[parameters('kind')]]",
+    "botAppKind": "[variables('botAppKinds')['bot']",
     "currentConfig": "[variables('config')[toLower(parameters('botEnv'))]]",
     "siteHost": "[concat(parameters('siteName'), '.azurewebsites.net')]",
     "botEndpointConfig": {
@@ -73,7 +74,8 @@
       "designer": "[concat('https://', variables('siteHost'), '/api/messages')]",
       "function": "[concat('https://', variables('siteHost'), '/api/messages?code=', 'NYI')]"
     },
-    "botEndpoint": "[variables('botEndpointConfig')[parameters('kind')]]",
+    //"botEndpoint": "[variables('botEndpointConfig')[parameters('kind')]]",
+    "botEndpoint": "[variables('botEndpointConfig')['bot']",
     "luisApiName": "",
     "luisApiResId": "[resourceId('Microsoft.CognitiveServices/accounts/', variables('luisApiName'))]"
   },
@@ -97,7 +99,7 @@
       "type": "Microsoft.BotService/botServices",
       "name": "[parameters('botId')]",
       "location": "global",
-      "kind": "[parameters('kind')]",
+      "kind": "bot",
       "sku": {
         "name": "[parameters('sku')]"
       },
