@@ -35,11 +35,7 @@
     },
     "appSecret": {
       "type": "string"
-    },
-    "azureWebJobsBotFrameworkDirectLineSecret": {
-      "type": "string",
-      "defaultValue": ""
-    },    
+    },     
     "useAppInsights": {
       "type": "bool",
       "defaultValue": false
