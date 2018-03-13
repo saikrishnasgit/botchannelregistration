@@ -35,15 +35,7 @@
     },
     "appSecret": {
       "type": "string"
-    },     
-    //"useAppInsights": {
-    //  "type": "bool",
-    //  "defaultValue": false
-    //},
-    //"appInsightsLocation": {
-    //  "type": "string",
-    //  "defaultValue": "East US"
-    //},        
+    },              
     "endpoint": {
       "type": "string",
       "defaultValue": ""
