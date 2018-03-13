@@ -31,17 +31,10 @@
     },
     "appSecret": {
       "type": "string"
-    },              
-    "endpoint": {
-      "type": "string",
-      "defaultValue": ""
-    }
+    }  
   },
   "variables": {
     "storageAccountType": "Standard_LRS",
-    //"storageaccountName": "[parameters('storageAccountName')]",
-    //"storageAccountId": "[if(or(parameters('createNewStorage'), equals('', parameters('storageAccountResourceId'))), resourceId('Microsoft.Storage/storageAccounts', parameters('storageAccountName')), parameters('storageAccountResourceId'))]",
-    //"serverFarmName": "[last(split(parameters('serverFarmId'), '/'))]",
     "myWorkerSize": 0,
     "proactiveFunctionName": "[concat(parameters('siteName'), '-function')]",
     "insightsName": "[concat(parameters('botId'), substring(uniqueString(resourceGroup().id), 0, 6))]",
@@ -75,7 +68,7 @@
     "currentConfig": "[variables('config')[toLower(parameters('botEnv'))]]",
     "siteHost": "[concat(parameters('siteName'), '.azurewebsites.net')]",
     "botEndpointConfig": {
-      "bot": "[parameters('endpoint')]",
+      "bot": "",
       "sdk": "[concat('https://', variables('siteHost'), '/api/messages')]",
       "designer": "[concat('https://', variables('siteHost'), '/api/messages')]",
       "function": "[concat('https://', variables('siteHost'), '/api/messages?code=', 'NYI')]"
