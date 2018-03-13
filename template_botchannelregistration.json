@@ -4,6 +4,7 @@
   "parameters": {
     "botEnv": {
       "type": "string",
+      "readOnly": true,
       "defaultValue": "prod"
     },
     "botId": {
@@ -16,23 +17,30 @@
     },
     "sku": {
       "type": "string",
-      "defaultValue": "S1"
+      "defaultValue": "S1",
+      "allowedValues": [ "B1", "B2", "B3", "S1", "S2", "S3", "P1", "P2", "P3", "P4" ],
+      "metadata": { "description": "Describes plan's pricing tier and instance size. Check details at https://azure.microsoft.com/en-us/pricing/details/app-service/" }
     },
     "kind": {
       "type": "string",
-      "defaultValue": "bot"
+      "defaultValue": "bot",
+      "readOnly": true,
+      "metadata": { "description": "Kind of resource. It's **bot** by default" }
     },
     "siteName": {
       "type": "string",
+      "readOnly": true,
       "defaultValue": "nosite"
-    },   
-    "appId": {
-      "type": "string"
     },
-    "appSecret": {
-      "type": "string"
-    }  
-  },
+      "appId": {
+        "type": "string",
+        "metadata": { "description": "Enter the **Native Application Id** of the Web app app that is registered in Azure Active Directory" }
+      },
+      "appSecret": {
+        "type": "string",
+        "metadata": { "description": "Enter the **Secret Key** the Web app app that is registered in Azure Active Directory" }
+      }
+    },
   "variables": {
     "storageAccountType": "Standard_LRS",
     "myWorkerSize": 0,
