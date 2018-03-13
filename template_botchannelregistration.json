@@ -26,10 +26,6 @@
       "type": "string",
       "defaultValue": "nosite"
     },   
-    "storageAccountResourceId": {
-      "type": "string",
-      "defaultValue": ""
-    },
     "appId": {
       "type": "string"
     },
