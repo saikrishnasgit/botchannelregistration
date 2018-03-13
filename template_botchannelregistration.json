@@ -36,14 +36,14 @@
     "appSecret": {
       "type": "string"
     },     
-    "useAppInsights": {
-      "type": "bool",
-      "defaultValue": false
-    },
-    "appInsightsLocation": {
-      "type": "string",
-      "defaultValue": "East US"
-    },        
+    //"useAppInsights": {
+    //  "type": "bool",
+    //  "defaultValue": false
+    //},
+    //"appInsightsLocation": {
+    //  "type": "string",
+    //  "defaultValue": "East US"
+    //},        
     "endpoint": {
       "type": "string",
       "defaultValue": ""
@@ -106,8 +106,8 @@
       "type": "microsoft.insights/components",
       "kind": "web",
       "apiVersion": "2014-04-01",
-      "condition": "[parameters('useAppInsights')]",
-      "location": "[parameters('appInsightsLocation')]",
+      "condition": false,
+      "location": "East US",
       "tags": {
         "[concat('hidden-link:', resourceId('Microsoft.BotService/botServices/', parameters('botId')))]": "Resource"
       },
